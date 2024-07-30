@@ -1,0 +1,108 @@
+[versions]
+agp = "8.5.1"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.4"
+activityCompose = "1.9.1"
+composeBom = "2024.06.00"
+appcompat = "1.7.0"
+material = "1.12.0"
+jetbrainsKotlinJvm = "1.9.0"
+viewModelKtxVersion = "2.8.4"
+retrofitVersion = "2.11.0"
+gsonVersion = "2.11.0"
+okHttpVersion = "4.12.0"
+navigationVersion = "2.8.0-beta06"
+hiltNavigationVersion = "1.2.0"
+kotlinSerializationVersion = "1.7.1"
+hiltVersion = "2.51.1"
+coilVersion = "2.6.0"
+coroutineVersion = "1.7.3"
+junit5Version = "5.10.2"
+mockkVersion = "1.13.10"
+ksp = "2.0.0-1.0.24"
+ktlintVersion = "12.1.1"
+detektVersion = "1.23.5"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewModelKtxVersion"}
+
+
+#Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx"}
+androidx-lifecycle-viewmodel-compose = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewModelKtxVersion"}
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+#Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
+gson-converter-factory = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttpVersion"}
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttpVersion"}
+
+#Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationVersion"}
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationVersion"}
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationVersion"}
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationVersion"}
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerializationVersion"}
+
+
+#Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion"}
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion"}
+
+
+#Test
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junit-ext = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+compose-ui-junit = { group = "androidx.compose.ui", name = "ui-test-junit4"}
+compose-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest"}
+coroutine-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutineVersion"}
+junit-bom = { group = "org.junit", name = "junit-bom", version.ref = "junit5Version"}
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin"}
+junit5 = { group = "org.junit.jupiter", name = "junit-jupiter"}
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion"}
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher"}
+web-mock-server = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okHttpVersion"}
+
+
+
+#Coil
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coilVersion"}
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion"}
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+ktlint-plugin = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintVersion"}
+detekt-plugin = { id = "io.gitlab.arturbosch.detekt", version.ref = "detektVersion"}
+kotlin-percelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin"}
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+

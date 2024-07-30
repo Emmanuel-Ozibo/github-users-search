@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="github_users_empty_search_query_message">Search Github for users…</string>
+    <string name="github_users_empty_search_result_message">We’ve searched the ends of the earth, users not found, please try again</string>
+    <string name="github_users_search_bar_placeholder_text">Search for users…</string>
+    <string name="github_users_empty_repositories_text">This user doesn’t have repositories yet, come back later :-)</string>
+    <string name="github_users_last_updated_text">Updated at %1$s</string>
+    <string name="github_users_top_app_bar_text">Users</string>
+    <string name="github_users_repo_counts_text">Repositories</string>
+</resources>

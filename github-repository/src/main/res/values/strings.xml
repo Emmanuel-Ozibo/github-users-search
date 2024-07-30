@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github Search</string>
+    <string name="empty_search_bar">Search Github for repositories, issues and pull requests!</string>
+    <string name="search_bar_placeholder_text">Search for repositories…</string>
+    <string name="empty_repository_result_message">We\’ve searched the ends of the earth, repository not found, please try again</string>
+</resources>

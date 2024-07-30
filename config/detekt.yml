@@ -1,0 +1,81 @@
+# Detekt Ruleset documentation https://detekt.github.io/detekt/comments.html
+
+# Defaults overridden from: https://github.com/detekt/detekt/blob/main/detekt-core/src/main/resources/default-detekt-config.yml
+
+complexity:
+  LongParameterList:
+    constructorThreshold: 12
+    ignoreAnnotated: [ 'Composable' ]
+    ignoreAnnotatedParameter: [ 'Query','Path','Header' ] # ignore mandatory retrofit annotations
+
+naming:
+  ClassNaming:
+    excludes: ['**/test/**'] # To avoid flagging for class names that are starting with backticks e.g. `My Test Class`
+  FunctionNaming:
+    ignoreAnnotated: ['Composable']
+  EnumNaming:
+    enumEntryPattern: '[_a-zA-Z0-9]*'
+
+style:
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+    ignoreAnnotated: ['Test']
+  UnusedPrivateMember:
+    active: true
+    ignoreAnnotated: ['Preview']
+  ForbiddenComment:
+    allowedPatterns: '[A-Z]{3,}-[\d]+'
+  VarCouldBeVal:
+    active: true
+    ignoreLateinitVar: true
+  MagicNumber:
+    active: true
+    ignoreAnnotated:
+      - 'Preview'
+
+potential-bugs:
+  IgnoredReturnValue:
+    active: false # Deactivating as it's reporting false positives in tests. Reported here https://github.com/detekt/detekt/issues/6134
+    restrictToConfig: true
+    returnValueAnnotations:
+      - 'CheckResult'
+      - '*.CheckResult'
+      - 'CheckReturnValue'
+      - '*.CheckReturnValue'
+    ignoreReturnValueAnnotations:
+      - 'CanIgnoreReturnValue'
+      - '*.CanIgnoreReturnValue'
+    returnValueTypes:
+      - 'kotlin.sequences.Sequence'
+      - 'kotlinx.coroutines.flow.*Flow'
+      - 'java.util.stream.*Stream'
+    ignoreFunctionCall: [ ]
+
+comments:
+  OutdatedDocumentation:
+    active: false
+    ignoreAnnotated:
+      - 'Preview'
+  UndocumentedPublicClass:
+    active: false
+    ignoreAnnotated:
+      - 'Preview'
+  UndocumentedPublicFunction:
+    active: false
+    ignoreAnnotated:
+      - 'Preview'
+  UndocumentedPublicProperty:
+    active: false
+    ignoreAnnotated:
+      - 'Preview'
+  EndOfSentenceFormat:
+    active: true
+    ignoreAnnotated:
+      - 'Preview'
+
+coroutines:
+  active: true
+  InjectDispatcher:
+    active: true
+    excludes: ['**/test/**', '**/androidTest/**']
