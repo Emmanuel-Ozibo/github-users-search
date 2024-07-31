@@ -1,6 +1,5 @@
 package com.example.users.widget
 
-
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -10,8 +9,6 @@ import coil.transform.CircleCropTransformation
 import com.example.sculptor.SculptorTheme
 import com.example.users.R
 import com.example.users.databinding.UserItemCardBinding
-
-
 
 @Composable
 fun UserItemCard(
@@ -26,7 +23,7 @@ fun UserItemCard(
 ) {
     AndroidViewBinding(
         modifier = modifier,
-        factory = UserItemCardBinding::inflate
+        factory = UserItemCardBinding::inflate,
     ) {
         txtFullName.text = fullName
         txtUserTag.text = tag
@@ -42,7 +39,6 @@ fun UserItemCard(
     }
 }
 
-
 @Preview
 @Composable
 private fun UserItemCardPreview() {
@@ -53,7 +49,7 @@ private fun UserItemCardPreview() {
             profileDescription = "This is a random bio, which will be replace with actual content",
             location = "New York",
             email = "paige@gmail.com",
-            tag = "paige"
+            tag = "paige",
         )
     }
 }

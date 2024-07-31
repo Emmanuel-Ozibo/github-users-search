@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "GithubSearch"
-include(":app", ":core", ":sculptor", ":github-repository", ":github-users")
+include(":app", ":core", ":sculptor", ":github-users")

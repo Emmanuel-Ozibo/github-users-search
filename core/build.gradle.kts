@@ -61,7 +61,6 @@ dependencies {
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.gson.converter.factory)
 
-
     // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
@@ -102,7 +101,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     testRuntimeOnly(libs.junit.platform.launcher)
 
-    //Coil
+    // Coil
     implementation(libs.coil)
     implementation(libs.coil.compose)
 }

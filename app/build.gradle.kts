@@ -58,7 +58,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.gson)
 
-
     // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
@@ -68,7 +67,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-
 
     // Tests
     implementation(platform(libs.junit.bom))
@@ -89,11 +87,9 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     testRuntimeOnly(libs.junit.platform.launcher)
 
-
     // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
-
 
     // Navigation
     implementation(libs.androidx.navigation.fragment)
@@ -105,6 +101,5 @@ dependencies {
     // Project dependencies.
     implementation(project(":core"))
     implementation(project(":sculptor"))
-    implementation(project(":github-repository"))
     implementation(project(":github-users"))
 }

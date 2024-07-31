@@ -91,17 +91,16 @@ dependencies {
     implementation(libs.androidx.navigation.ui)
     implementation(libs.kotlinx.serialization)
 
-    //Networking
+    // Networking
     implementation(libs.retrofit)
     implementation(libs.gson)
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.gson.converter.factory)
 
-    //coil
+    // coil
     implementation(libs.coil)
     implementation(libs.coil.compose)
-
 
     // Project dependencies
     implementation(project(":sculptor"))
