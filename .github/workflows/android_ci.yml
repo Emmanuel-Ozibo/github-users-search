@@ -27,6 +27,7 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+        # Read values set in my repository secrets, then create secrets.properties, read and copy the secrets into this file.
       - name: Create secrets.properties
         run: |
           echo "SECRET_GITHUB_TOKEN=${{ secrets.SECRET_GITHUB_TOKEN }}" >> ./secrets.properties
