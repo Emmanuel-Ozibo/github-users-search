@@ -24,7 +24,7 @@ android {
         consumerProguardFiles("consumer-rules.pro")
 
         buildConfigField("String", "GITHUB_API_BASE_URL", "\"https://api.github.com/\"")
-        buildConfigField("String", "GITHUB_TOKEN", "\"${properties.getProperty("GITHUB_TOKEN")}\"")
+        buildConfigField("String", "GITHUB_TOKEN", "\"${properties.getProperty("SECRET_GITHUB_TOKEN")}\"")
     }
 
     buildTypes {
