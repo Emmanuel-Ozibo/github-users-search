@@ -39,6 +39,7 @@ android {
 
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.10"
@@ -58,6 +59,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.compose.ui.viewbinding)
 
     // Tests
     implementation(platform(libs.junit.bom))
@@ -95,6 +97,10 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.gson.converter.factory)
+
+    //coil
+    implementation(libs.coil)
+    implementation(libs.coil.compose)
 
 
     // Project dependencies

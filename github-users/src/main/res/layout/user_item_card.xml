@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/user_card"
+        app:strokeWidth="1dp"
+        app:strokeColor="#D9D9D9"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:contentPadding="@dimen/content_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/random"
+                android:contentDescription="@string/profile_picture_des"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                tools:text="Paige Brown"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="14sp"
+                android:textColor="@color/ocean_blue"
+                app:layout_constraintStart_toEndOf="@+id/profile_picture"
+                app:layout_constraintTop_toTopOf="@+id/profile_picture" />
+
+            <TextView
+                android:id="@+id/txt_user_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="DynamicWebPaige"
+                android:textSize="12sp"
+                android:fontFamily="@font/manrope_regular"
+                android:textColor="@color/dark"
+                app:layout_constraintStart_toStartOf="@+id/txt_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_full_name" />
+
+            <TextView
+                android:id="@+id/txt_user_bio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="This is a random bio, which will be replace with actual content This is a random bio, which will be replace with actual content"
+                android:textSize="12sp"
+                android:textColor="@color/dark"
+                android:fontFamily="@font/manrope_semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txt_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_user_tag" />
+
+            <TextView
+                android:id="@+id/txt_user_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="Lagos, Nigeria"
+                android:textSize="11sp"
+                android:fontFamily="@font/manrope_regular"
+                android:textColor="@color/light_gray"
+                app:layout_constraintStart_toStartOf="@+id/txt_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_user_bio" />
+
+            <TextView
+                android:id="@+id/txt_user_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                tools:text="momoko@gmail.com"
+                android:textSize="11sp"
+                android:fontFamily="@font/manrope_regular"
+                android:textColor="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_user_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_user_location"
+                app:layout_constraintTop_toTopOf="@+id/txt_user_location" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

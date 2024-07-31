@@ -7,4 +7,5 @@
     <string name="github_users_last_updated_text">Updated at %1$s</string>
     <string name="github_users_top_app_bar_text">Users</string>
     <string name="github_users_repo_counts_text">Repositories</string>
+    <string name="profile_picture_des">Profile picture</string>
 </resources>

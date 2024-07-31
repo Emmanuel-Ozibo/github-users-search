@@ -147,6 +147,7 @@ fun LazyListScope.loadedUIState(
             profileDescription = user.bio,
             location = user.location,
             email = user.email,
+            tag = user.login,
             onCardClick = { onUserItemCardClick(user) },
         )
     }

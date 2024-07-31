@@ -101,4 +101,8 @@ dependencies {
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso.core)
     testRuntimeOnly(libs.junit.platform.launcher)
+
+    //Coil
+    implementation(libs.coil)
+    implementation(libs.coil.compose)
 }
