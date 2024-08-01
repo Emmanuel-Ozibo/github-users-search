@@ -5,9 +5,9 @@ This is an application that allows us to search for users on GitHub, it uses Git
 It aims to showcase some modern techniques used in building Android applications.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="screenshots/Screenshot_20240731_225302.png" alt="Image 1" width="150" height="150">
-  <img src="screenshots/Screenshot_20240731_225506.png" alt="Image 2" width="150" height="150">
-  <img src="screenshots/Screenshot_20240731_225529.png" alt="Image 3" width="150" height="150">
+  <img src="screenshots/Screenshot_20240731_225302.png" alt="Image 1" width="150" height="400">
+  <img src="screenshots/Screenshot_20240731_225506.png" alt="Image 2" width="150" height="400">
+  <img src="screenshots/Screenshot_20240731_225529.png" alt="Image 3" width="150" height="400">
 </div>
 
 ## Application setup
@@ -22,8 +22,7 @@ It aims to showcase some modern techniques used in building Android applications
     ```
     
 - Run the project 😃
-
-![Image 31-07-2024 at 23.37.jpeg](screenshots/Image_31-07-2024_at_23.37.jpeg)
+  <img src="screenshots/Image_31-07-2024_at_23.37.jpeg" alt="Image 1" width="150" height="300">
 
 ## Project Architecture.
 
