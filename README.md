@@ -4,11 +4,11 @@ This is an application that allows us to search for users on GitHub, it uses Git
 
 It aims to showcase some modern techniques used in building Android applications.
 
-![Screenshot_20240731_225302.png](GitHub%20users%20search%20ed4dc159b9694d0d8ef4935a79a4552b/Screenshot_20240731_225302.png)
+![Screenshot_20240731_225302.png](screenshots/Screenshot_20240731_225302.png)
 
-![Screenshot_20240731_225506.png](GitHub%20users%20search%20ed4dc159b9694d0d8ef4935a79a4552b/a4350b39-0c6a-4519-91b5-06bc60473eda.png)
+![Screenshot_20240731_225506.png](screenshots/Screenshot_20240731_225506.png)
 
-![Screenshot_20240731_225529.png](GitHub%20users%20search%20ed4dc159b9694d0d8ef4935a79a4552b/Screenshot_20240731_225529.png)
+![Screenshot_20240731_225529.png](screenshots/Screenshot_20240731_225529.png)
 
 ## Application setup
 
@@ -23,13 +23,13 @@ It aims to showcase some modern techniques used in building Android applications
     
 - Run the project 😃
 
-![Image 31-07-2024 at 23.37.jpeg](GitHub%20users%20search%20ed4dc159b9694d0d8ef4935a79a4552b/Image_31-07-2024_at_23.37.jpeg)
+![Image 31-07-2024 at 23.37.jpeg](screenshots/Image_31-07-2024_at_23.37.jpeg)
 
 ## Project Architecture.
 
 The project uses multiple modules, each feature is separated into modules. 
 
-![IMG_1009.jpeg](GitHub%20users%20search%20ed4dc159b9694d0d8ef4935a79a4552b/IMG_1009.jpeg)
+![IMG_1009.jpeg](screenshots/IMG_1009.jpeg)
 
 **core**: Contains shared logic, code, and resources used across different modules.
 
