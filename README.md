@@ -4,7 +4,7 @@ This is an application that allows us to search for users on GitHub, it uses Git
 
 It aims to showcase some modern techniques used in building Android applications.
 
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between; gap: 24px;">
   <img src="screenshots/Screenshot_20240731_225302.png" alt="Image 1" width="300">
   <img src="screenshots/Screenshot_20240731_225506.png" alt="Image 2" width="300">
   <img src="screenshots/Screenshot_20240731_225529.png" alt="Image 3" width="300">
