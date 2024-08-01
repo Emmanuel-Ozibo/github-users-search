@@ -4,11 +4,11 @@ This is an application that allows us to search for users on GitHub, it uses Git
 
 It aims to showcase some modern techniques used in building Android applications.
 
-![Screenshot_20240731_225302.png](screenshots/Screenshot_20240731_225302.png){ width=100 height=200 }
-
-![Screenshot_20240731_225506.png](screenshots/Screenshot_20240731_225506.png){ width=100 height=200 }
-
-![Screenshot_20240731_225529.png](screenshots/Screenshot_20240731_225529.png){ width=100 height=200 }
+<div style="display: flex; justify-content: space-between;">
+  <img src="screenshots/Screenshot_20240731_225302.png" alt="Image 1" width="150" height="150">
+  <img src="screenshots/Screenshot_20240731_225506.png" alt="Image 2" width="150" height="150">
+  <img src="screenshots/Screenshot_20240731_225529.png" alt="Image 3" width="150" height="150">
+</div>
 
 ## Application setup
 
